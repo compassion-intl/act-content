@@ -44,7 +44,6 @@
 	</div>
 </header>
 
-
 <div id="brazil-landing">
     <div class="fixed-buttons main-buttons">
         <div class="columns">
@@ -103,14 +102,19 @@
         <div class="columns infographic">
             <div class="hide-for-small">
                 <img src="multimedia/act-for_brazil_infographic_main_placeholder.png">
-                <img class="cloud" src="multimedia/act-for_brazil_infographic_cloud.svg">
+                <img class="cloud" src="multimedia/act-for_brazil_infographic_cloud.svg">  
+                <img class="illiterate" src="multimedia/act-for_brazil_infographic_illiterate.svg">
+                <img class="waterdrop-1" src="multimedia/act-for_brazil-infographic-waterdrop-3.png">
+                <img class="waterdrop-2" src="multimedia/act-for_brazil-infographic-waterdrop-3.png">
+                <img class="waterdrop-3" src="multimedia/act-for_brazil-infographic-waterdrop-3.png">
                 <img class="van" src="multimedia/act-for_brazil_infographic_van.svg">
                 <img class="background" src="multimedia/act-for_brazil_infographic_main.png">
+                <img class="text" src="multimedia/act-for_brazil_infographic_text.png">
             </div>
-            <img class="show-for-small" src="multimedia/act-for_brazil-infographic_mobile.png">
+            <img class="show-for-small" src="multimedia/act-for_brazil-infographic_mobile.png"> 
         </div>
     </div>
-</section>
+</section>  
 
 <section class="three-stories">
     <div class="row">
@@ -156,7 +160,7 @@
                 <span>Mind, body, heart, and soul</span>
             </h2>
             <p>The funds you raise will go to impact church-based child development centers in Brazil!</p>
-            <ul class="small-block-grid-4 mind-body-icons">
+            <ul class="small-block-grid-4 mind-body-icons" style="background: url(multimedia/act-for_circle.png) no-repeat center;">
                 <li class="mind"><img class="selected" src="multimedia/act-for_mind.png"></li>
                 <li class="body"><img src="multimedia/act-for_body.png"></li>
                 <li class="heart"><img src="multimedia/act-for_heart.png"></li>
@@ -229,7 +233,7 @@
             </div>
             <div class="icon marathon columns small-6">
                 <div class="table-cell">
-                    <img src="multimedia/act-for_brazil-icon-marathon.png">
+                    <img src="multimedia/act-for_brazil-icon-marathon.jpg">
                     <p>Run your first (or tenth) marathon for the children of Brazil.</p>
                 </div>
             </div>
@@ -310,7 +314,7 @@
                 <img src="multimedia/act-for_brazil-icon-marathon.png">
                 <p>Run your first (or tenth) marathon for the children of Brazil.</p>
             </div>
-            <div class="picture columns medium-4 boy" style="background: url(multimedia/act-for_brazil-action-1-2.png) no-repeat; background-size: cover;">
+            <div class="picture columns medium-4 boy" style="background: url(multimedia/act-for_brazil-action-1-2.jpg) no-repeat; background-size: cover;">
                 <div class="mask">
                     <div class="mask-content">
                         <p>Charity Navigator, America's largest charity evaluator, has awarded Compassion its highest rating - four stars - for 14 consecutive years</p>
@@ -373,7 +377,7 @@
 
 <section id="howitworks" class="how-to-act">
     <div class="row">
-        <h1>How it works</h1>
+        <h1>How it works</h1>  
     </div>
     <div class="row">
         <div class="columns medium-4">
@@ -395,7 +399,7 @@
 </section>
 
 <section class="ending">
-    <img src="multimedia/act-for_brazil-landing-end.jpg">
+    <img src="multimedia/act-for_brazil_landing-end.jpg">
     <div class="layer"></div>
 </section>
 </div>
@@ -411,14 +415,14 @@
     $('.fundraising-in-action .picture').each(function(){
         $(this).hover(function(){
             $(this).find('.mask').toggleClass('hover');
-        })
+        })  
     })
-
+  
     $("#how-does-it-work").click(function(){ 
         var sectionTop = $("#howitworks").offset().top;
         $('html, body').animate({scrollTop:sectionTop}, 500);
         return false;
-    })
+    })  
     
     $(".mind-body-icons .body img").on('click', function(){
         $(".mind-body-icons .body img").addClass('selected');
@@ -426,7 +430,7 @@
         $(".mind-body-content .body").siblings().removeClass('selected');
         $(".mind-body-content .body").addClass('selected');
         
-    })
+    })  
     $(".mind-body-icons .heart img").on('click', function(){
         $(".mind-body-icons .heart img").addClass('selected');
         $(".mind-body-icons .heart img").closest('li').siblings().find('img').removeClass('selected');
@@ -478,16 +482,12 @@
         
     })
 
-
+    
     var lastScrollTop = 0, delta = 5;
     
     $(window).on('scroll', function() {
         var nowScrollTop = $(this).scrollTop();
         var buttonPosition = $('.intro .buttons-2').offset().top;
-        var windowBottom = $(window).height();
-        var infographicPosition = $('.info .background').offset().top;
-        var viewportBottom = windowBottom + nowScrollTop;
-
         
         if(Math.abs(lastScrollTop - nowScrollTop) >= delta){ //scroll down
             if(nowScrollTop > lastScrollTop && buttonPosition < nowScrollTop) {
@@ -498,14 +498,44 @@
 
             lastScrollTop = nowScrollTop;
         }
+
         // console.log(viewportBottom, infographicPosition, nowScrollTop);
         // if(nowScrollTop < infographicPosition <viewportBottom) {
-        //     console.log('the van is here!');
+        //      console.log('the van is here!');
         // }
+
+
+        $.fn.inView = function(inViewType){
+            var viewport = {};
+            viewport.top = $(window).scrollTop();
+            viewport.bottom = viewport.top + $(window).height();
+            var bounds = {};
+            bounds.top = this.offset().top;
+            bounds.bottom = bounds.top + this.outerHeight();
+            switch(inViewType){
+              case 'bottomOnly':
+                return ((bounds.bottom <= viewport.bottom) && (bounds.bottom >= viewport.top));
+              case 'topOnly':
+                return ((bounds.top <= viewport.bottom) && (bounds.top >= viewport.top));
+              case 'both':
+                return ((bounds.top >= viewport.top) && (bounds.bottom <= viewport.bottom));         
+              default:     
+                return ((bounds.top >= viewport.top) && (bounds.bottom <= viewport.bottom));        
+            }  
+        };
+  
+        if($('.infographic .van').inView('both')) {
+            $('.infographic .van').addClass('move');
+        } 
     });
+
 
 })(jQuery);
 </script>
+
+
+
+
 
 
 
