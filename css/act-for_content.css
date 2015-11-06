@@ -1,11 +1,11 @@
 /*------------------------------------*\
-    $MIXINS
+	$MIXINS
 \*------------------------------------*/
 /* CSS Transition
-    Usage: @include transition(width,0.3s,ease-out);
+	Usage: @include transition(width,0.3s,ease-out);
  */
-/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback
-    Usage: @include font-size(1, large);
+/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
+	Usage: @include font-size(1, large);
 */
 meta.foundation-version {
   font-family: "/{{VERSION}}/"; }
@@ -6766,7 +6766,8 @@ input[type="checkbox"] + label, input[type="radio"] + label {
         height: 4rem; } }
 
 #brazil-landing, #post-actbr {
-  text-align: center; }
+  text-align: center;
+  overflow-x: hidden; }
   #brazil-landing h1, #brazil-landing h2, #brazil-landing h4, #brazil-landing p, #brazil-landing a, #post-actbr h1, #post-actbr h2, #post-actbr h4, #post-actbr p, #post-actbr a {
     color: white; }
   @media only screen and (max-width: 40em) {
@@ -7348,7 +7349,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
         margin-left: auto;
         margin-right: auto;
         height: 600px;
-        background: url(/multimedia/act-for_circle.png) no-repeat center; } }
+        background: url(../images/act-for_circle.png) no-repeat center; } }
     .mind-body .mind-body-icons img {
       opacity: .25;
       margin-top: 1rem;
