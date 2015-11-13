@@ -281,32 +281,32 @@
 <!-- Toolkit end -->
 
 <script>
-    (function($){
-        $('#tab-get-started').click(function(){
-            $(this).addClass('active');
-            $(this).siblings().removeClass('active');
-            $('#get-started').css('display','block');
-            $('#get-started').siblings('.toolkit-section').css('display','none');
-        })
-        $('#tab-keep-moving').click(function(){
-            $(this).addClass('active');
-            $(this).siblings().removeClass('active');
-            $('#keep-moving').css('display','block');
-            $('#keep-moving').siblings('.toolkit-section').css('display','none');
-        })
-        $('#tab-finish-strong').click(function(){
-            $(this).addClass('active');
-            $(this).siblings().removeClass('active');
-            $('#finish-strong').css('display','block');
-            $('#finish-strong').siblings('.toolkit-section').css('display','none');
-        })
-        $('#tab-say-thanks').click(function(){
-            $(this).addClass('active');
-            $(this).siblings().removeClass('active');
-            $('#say-thanks').css('display','block');
-            $('#say-thanks').siblings('.toolkit-section').css('display','none');
-        })
-    })(jQuery);
+(function($){
+  $('#tab-get-started').click(function(){
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+    $('#get-started').css('display','block');
+    $('.toolkit-section').not('#get-started').css('display','none');
+  })
+  $('#tab-keep-moving').click(function(){
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+    $('#keep-moving').css('display','block');
+    $('.toolkit-section').not('#keep-moving').css('display','none');
+  })
+  $('#tab-finish-strong').click(function(){
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+    $('#finish-strong').css('display','block');
+    $('.toolkit-section').not('#finish-strong').css('display','none');
+  })
+  $('#tab-say-thanks').click(function(){
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+    $('#say-thanks').css('display','block');
+    $('.toolkit-section').not('#say-thanks').css('display','none');
+  })
+})(jQuery);
 </script>
 </body>
 
