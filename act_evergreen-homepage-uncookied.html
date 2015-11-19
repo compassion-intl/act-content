@@ -17,6 +17,7 @@
 	</head>
 
 <body>
+
 <header class="header cf clearfix" role="banner"> <!-- there should be a control for this -->
 	<div class="row">
 		<div id="logo">
@@ -42,6 +43,11 @@
 </header>
 
 <div id="evergreen-landing-uncookied">
+
+	<div class="video-pop-up">
+	    <img src="/multimedia/x.png">
+	    <video src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" controls></video>
+	</div>
 	<div class="fixed-buttons">
 		<div class="columns">
 			<ul class="buttons-2">
@@ -116,13 +122,13 @@
 			</div>
 			<div class="columns medium-4">
 				<div class="img-holder"><img src="/multimedia/act-for_howitworks-2-2.png"></div>
-				<h4>Create a fundraiser</h4>
-				<p>Use Compassion's digital resources to lay the groundwork and set your goals.</p>
+				<h4>Create your fundraiser</h4>
+				<p>Take your idea and fundraise with it! Use Compassion's digital resources to lay the groundwork and set your goals.</p>
 			</div>
 			<div class="columns medium-4">
 				<div class="img-holder"><img src="/multimedia/act-for_howitworks-3.png"></div>
 				<h4>Put your love into action</h4>
-				<p>Share with friends, engage your communities and reach your goal. Changing a life will uplift your own.</p>
+				<p>Share and promote your fundraiser with friends, engage your communities and reach your goal. Changing lives will uplift your own.</p>
 			</div>
 		</div>
 		<div class="sponsorship illustrations row">
@@ -133,13 +139,13 @@
 			</div>
 			<div class="columns medium-4">
 				<div class="img-holder"><img src="/multimedia/act-for_howitworks-2-3.png"></div>
-				<h4>Start a campaign</h4>
-				<p>Use Compassion's digital resources to lay the groundwork and offer the gift of sponsorship to your loved ones.</p>
+				<h4>Start your campaign</h4>
+				<p>Sharing sponsorship has never been easier! Use Compassion's digital resources to lay the groundwork and offer the gift of sponsorship to your community.</p>
 			</div>
 			<div class="columns medium-4">
 				<div class="img-holder"><img src="/multimedia/act-for_howitworks-3-2.png"></div>
 				<h4>Put your love into action</h4>
-				<p>Engage your communities and connect children with new sponsors. Changing lives will uplift your own.</p>
+				<p>Share what sponsorship means to you, engage your communities and connect children with new sponsors.</p>
 			</div>
 		</div>
 
@@ -181,7 +187,11 @@
 					<a class="button-solid-blue">Start a campaign</a>
 				</div>
 			</div>
-			<div class="small-12 medium-8 columns video" style="background: url(/multimedia/act-for_evergreen_boy.jpg) no-repeat bottom;background-size: cover;">
+			<div class="small-12 medium-8 columns video">
+				<video poster="poster" src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" autoplay="" muted="muted"  loop=""></video>
+				<div class="row">
+				    <div class="centered play"><img src="/multimedia/act-for_play.png"></div>
+				</div>
 			</div>
 			<div class="small-12 medium-4 columns colorado ">
 				<div class="middle">
@@ -211,12 +221,12 @@
 					<a class="button-trans-white" href="http://www.compassion.com/volunteer/" target="_blank" >Volunteer</a>
 				</div>
 			</div>
-			<div class="small-12 medium-8 columns story " style="background: url(/multimedia/act-for_evergreen_volunteer-story.jpg) no-repeat; background-size: cover;">
+			<div class="small-12 medium-8 columns story " style="background: url(/multimedia/act-for_evergreen_volunteer-story.jpg) no-repeat center; background-size: cover;">
 				<div class="mask"></div>
 				<div class="middle">
 					<div class="text">
 						<h2>Volunteer story</h2>
-						<p>Supplementary line of text Lorem ipsum dolor sit amet</p>
+						<p>Supplementary line of text to introduce volunteer story</p>
 					</div>
 					<a class="button-trans-white">Read more</a>
 				</div>
@@ -233,6 +243,36 @@
 			</div>
 		</div>
 	</section>
+
+<style scoped>
+@media
+(-webkit-min-device-pixel-ratio: 2) and
+(min-resolution: 192dpi) and
+(max-width:500px) {
+    .compassion-in-action .malaria {
+    	background: url(/multimedia/act-for_evergreen_esther_x2.jpg) no-repeat;
+    }
+    .compassion-in-action .campaign {
+    	background: url(/multimedia/act-for_evergreen_boys_x2.jpg) no-repeat center;
+    }
+/*    .compassion-in-action .video {
+    	background: url(/multimedia/act-for_evergreen_boy_x2.jpg) no-repeat bottom;
+    }*/
+    .compassion-in-action .event {
+    	background: url(/multimedia/act-for_evergreen_volunteer-event_x2.jpg) no-repeat;
+    }
+    .compassion-in-action .story {
+    	background: url(/multimedia/act-for_evergreen_volunteer-story_x2.jpg) no-repeat center;
+    }
+    .compassion-in-action .pray {
+    	background: url(/multimedia/act-for_evergreen_girl-boy_x2.jpg) no-repeat right;
+    }
+    .compassion-in-action .malaria, .compassion-in-action .campaign, .compassion-in-action .video, .compassion-in-action .event, .compassion-in-action .story, .compassion-in-action .pray {
+    	background-size: cover;
+    }
+}
+</style>
+
 
 <section class="mind-body">
     <div class="row">
@@ -254,7 +294,7 @@
                         <li>After-school tutoring</li>
                         <li>Assistance with school fees</li>
                         <li>Supplies and uniforms</li>
-                        <li>Life-skills and vocational training</li>
+                        <li>Life skills and vocational training</li>
                         <li>Literacy classes, craft and music workshops</li>
                         <li>Infrastructure like classrooms and materials to run jobs and skills training workshops</li>
                         <li>Computer labs</li>
@@ -308,19 +348,22 @@
 					<p>- Gary, Greely CO</p>
 				</li>
 				<li data-orbit-slide="quote-2">
-					<p><span class="quote-mark">"</span>I began sponsoring through Compassion 21 years ago and have since sponsored 19 outstanding girls and boys in 8 different countries. I have seen four of them graduate and three went on to college!<span class="quote-mark">"</pan></p>
-					<p>- Gary, Greely CO</p>
+					<p><span class="quote-mark">"</span>My husband and I attended a concert when we saw a beautiful little face with hands on her hips. I started crying and I told my husband that this is the child that GOD wanted us to sponsor. Her name is Fernanda from Bolivia. She is my angel and I love her like she is my daughter.<span class="quote-mark">"</pan></p>
+					<p>- Hope, Buhl AL</p>
 				</li>
 				<li data-orbit-slide="quote-3">
-					<p><span class="quote-mark">"</span>I began sponsoring through Compassion 21 years ago and have since sponsored 19 outstanding girls and boys in 8 different countries. I have seen four of them graduate and three went on to college!<span class="quote-mark">"</pan></p>
-					<p>- Gary, Greely CO</p>
+					<p><span class="quote-mark">"</span>Our trip - intended to benefit our sponsored child, actually changed my life. Compassion does so much more than what I had realized. I was amazed by what I saw from every aspect. Compassion is the real deal!<span class="quote-mark">"</pan></p>
+					<p>- Michael, Buckely WA</p>
 				</li>
 			</ul>
 
 	</section>
 
 	<section class="evergreen-landing-end">
-		<img src="/multimedia/act-for_evergreen_landing-end.jpg">
+		<img
+	    src="/multimedia/act-for_brazil-landing-end.jpg"
+	    srcset="/multimedia/act-for_brazil_landing-end@2x.jpg 1600w"
+	    >
 		<div class="layer"></div>
 	</section>
 </div>
@@ -342,21 +385,23 @@
 		})
 	})
 
+		//////// STICKY BUTTONS
+
+	var windowW = $(window).width();
+	var pageH = $('#evergreen-landing-uncookied').height();
+
 	var lastScrollTop = 0, delta = 5;
 
     $(window).on('scroll', function() {
         var nowScrollTop = $(this).scrollTop();
-        var buttonPosition = $('.steps').offset().top;
 
         if(Math.abs(lastScrollTop - nowScrollTop) >= delta){ //scroll down
-        	if(nowScrollTop > lastScrollTop && buttonPosition < nowScrollTop) {
+        	if(nowScrollTop >= pageH/2 ) {
         		$('.fixed-buttons').addClass('appear');
-             }  else if (buttonPosition > nowScrollTop) {
+        		console.log(bodyH/2);
+             }  else {
              	$('.fixed-buttons').removeClass('appear');
              }
-             //else { //scroll up
-            //  	$('.fixed-buttons').css('display','none');
-            // }
         	lastScrollTop = nowScrollTop;
         }
     });
@@ -501,6 +546,20 @@
 	if($('div .fixed-buttons').length) {
 		$('footer').css('padding-bottom', '5rem');
 	}
+    ///////// VIDEO HERO
+
+    $('.video .play').on('click', function(){
+        $('.video-pop-up').css('display','block');
+        $('.video-pop-up video').get(0).play();
+        $('.video video').get(0).pause();
+        $('body, html').css('overflow', 'hidden');
+    })
+    $('.video-pop-up img').on('click', function(){
+        $('.video-pop-up').css('display','none');
+        $('.video-pop-up video').get(0).pause();
+        $('.video video').get(0).play();
+        $('body, html').css('overflow', 'auto');
+    })
 })(jQuery);
 </script>
 

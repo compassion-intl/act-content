@@ -63,7 +63,7 @@
 </div>
 
 <section class="hero">
-    <video poster="poster" src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" autoplay="" muted="muted" loop=""></video>
+    <video src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" autoplay="" muted="muted" loop=""></video>
     <div class="mask"></div>
     <div class="row">
         <h1><span>It starts</span><span>with one</span><span>act</span></h1>
@@ -109,11 +109,11 @@
             </li>
         </ul>
     </div>
-    <div class="row">
+    <div class="row infographic">
         <div class="columns">
-            <h2>Brazil is a country with a rich culture and strong faith, yet millions of Brazillian children live in extreme poverty and lack the resource to escape the cycle.</h2>
+            <h2>Our journey starts with Brazil. Brazil is a country with a rich culture and strong faith, yet millions of Brazilian children live in extreme poverty and lack the resources to escape the cycle.</h2>
         </div>
-        <div class="columns infographic">
+        <div class="columns">
             <div class="hide-for-small">
                 <img src="/multimedia/act-for_brazil_infographic_main_placeholder.png">
                 <img class="cloud" src="/multimedia/act-for_brazil_infographic_cloud.svg">
@@ -121,15 +121,19 @@
                 <img class="waterdrop-1" src="/multimedia/act-for_brazil-infographic-waterdrop-3.png">
                 <img class="waterdrop-2" src="/multimedia/act-for_brazil-infographic-waterdrop-3.png">
                 <img class="waterdrop-3" src="/multimedia/act-for_brazil-infographic-waterdrop-3.png">
-                <img class="van" src="/multimedia/act-for_brazil_infographic_van.svg">
-                <img class="background" src="/multimedia/act-for_brazil_infographic_main.png">
+                <img class="kids" src="/multimedia/act-for_brazil-infographic_kids.svg">
+                <img class="van" src="/multimedia/act-for_brazil-infographic_van.svg">
+                <img class="background" src="/multimedia/act-for_brazil-infographic_main.png">
                 <img class="text" src="/multimedia/act-for_brazil_infographic_text.png">
             </div>
-            <img class="show-for-small" src="/multimedia/act-for_brazil-infographic_mobile.png">
+
+        </div>
+         <img class="show-for-small" src="/multimedia/act-for_brazil-infographic_mobile.png">
+         <div class="columns">
+            <p>sources: UNICEF, Haver, Timetric</p>
         </div>
     </div>
 </section>
-<!-- end Stats & Info -->
 
 <!-- start 3 Stories -->
 <section class="three-stories">
@@ -191,7 +195,7 @@
                         <li>After-school tutoring</li>
                         <li>Assistance with school fees</li>
                         <li>Supplies and uniforms</li>
-                        <li>Life-skills and vocational training</li>
+                        <li>Life skills and vocational training</li>
                         <li>Literacy classes, craft and music workshops</li>
                         <li>Infrastructure like classrooms and materials to run jobs and skills training workshops</li>
                         <li>Computer labs</li>
@@ -396,7 +400,26 @@
 </section>
 <!-- end Fundraising in Action -->
 
-<!-- Post Brazil CTA -->
+<style scoped>
+@media
+(-webkit-min-device-pixel-ratio: 2) and
+(min-resolution: 192dpi) and
+(max-width:500px) {
+    .fundraising-in-action .jesus {
+        background: url(/multimedia/act-for_brazil-action-2_x2.jpg) no-repeat center;
+    }
+    .fundraising-in-action .bike {
+        background: url(/multimedia/act-for_brazil-action-3_x2.jpg) no-repeat center;
+    }
+    .fundraising-in-action .morgana {
+        background: url(/multimedia/act-for_brazil-action-4_x2.jpg) no-repeat center;
+    }
+    .fundraising-in-action .jesus, .fundraising-in-action .bike, .fundraising-in-action .morgana {
+        background-size: cover;
+    }
+}
+</style>
+
 <section class="post-end">
 
     <div class="row">
@@ -416,7 +439,10 @@
 
 
 <section class="ending">
-    <img src="/multimedia/act-for_brazil-landing-end.jpg">
+    <img
+    src="/multimedia/act-for_brazil-landing-end.jpg"
+    srcset="/multimedia/act-for_brazil_landing-end@2x.jpg 1600w"
+    >
     <div class="layer"></div>
 </section>
 </div>
@@ -527,8 +553,11 @@
             }
         };
 
-        if($('.infographic .van').inView('both')) {
-            $('.infographic .van').addClass('move');
+        if($('.infographic .van, .infographic .kids').inView('both')) {
+            $('.infographic .van, .infographic .kids').addClass('move');
+
+        } else {
+            $('.infographic .van, .infographic .kids').removeClass('move');
         }
     });
 

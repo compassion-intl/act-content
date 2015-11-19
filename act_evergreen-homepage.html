@@ -42,7 +42,11 @@
 </header>
 <!--start evergreen landing page-->
 <div id="evergreen-landing">
-<!--start cta buttons-->
+	<div class="video-pop-up">
+	    <img src="/multimedia/x.png">
+	    <video src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" controls></video>
+	</div>
+
 	<div class="fixed-buttons">
 		<div class="columns">
 			<ul class="buttons-2">
@@ -148,7 +152,11 @@
 					<a class="button-solid-blue">Start a campaign</a>
 				</div>
 			</div>
-			<div class="small-12 medium-8 columns video" style="background: url(/multimedia/act-for_evergreen_boy.jpg) no-repeat bottom;background-size: cover;">
+			<div class="small-12 medium-8 columns video">
+				<video poster="poster" src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" autoplay="" muted="muted"  loop=""></video>
+				<div class="row">
+				    <div class="centered play"><img src="/multimedia/act-for_play.png"></div>
+				</div>
 			</div>
 			<div class="small-12 medium-4 columns colorado ">
 				<div class="middle">
@@ -178,12 +186,12 @@
 					<a class="button-trans-white" href="http://www.compassion.com/volunteer/" target="_blank" >Volunteer</a>
 				</div>
 			</div>
-			<div class="small-12 medium-8 columns story " style="background: url(/multimedia/act-for_evergreen_volunteer-story.jpg) no-repeat; background-size: cover;">
+			<div class="small-12 medium-8 columns story " style="background: url(/multimedia/act-for_evergreen_volunteer-story.jpg) no-repeat center; background-size: cover;">
 				<div class="mask"></div>
 				<div class="middle">
 					<div class="text">
 						<h2>Volunteer story</h2>
-						<p>Supplementary line of text Lorem ipsum dolor sit amet</p>
+						<p>Supplementary line of text to introduce volunteer story</p>
 					</div>
 					<a class="button-trans-white">Read more</a>
 				</div>
@@ -200,8 +208,36 @@
 			</div>
 		</div>
 	</section>
-	<!--end compassion in action-->
-<!--start how to act-->
+
+<style scoped>
+@media
+(-webkit-min-device-pixel-ratio: 2) and
+(min-resolution: 192dpi) and
+(max-width:500px) {
+    .compassion-in-action .malaria {
+    	background: url(/multimedia/act-for_evergreen_esther_x2.jpg) no-repeat;
+    }
+    .compassion-in-action .campaign {
+    	background: url(/multimedia/act-for_evergreen_boys_x2.jpg) no-repeat center;
+    }
+/*    .compassion-in-action .video {
+    	background: url(/multimedia/act-for_evergreen_boy_x2.jpg) no-repeat bottom;
+    }*/
+    .compassion-in-action .event {
+    	background: url(/multimedia/act-for_evergreen_volunteer-event_x2.jpg) no-repeat;
+    }
+    .compassion-in-action .story {
+    	background: url(/multimedia/act-for_evergreen_volunteer-story_x2.jpg) no-repeat center;
+    }
+    .compassion-in-action .pray {
+    	background: url(/multimedia/act-for_evergreen_girl-boy_x2.jpg) no-repeat right;
+    }
+    .compassion-in-action .malaria, .compassion-in-action .campaign, .compassion-in-action .video, .compassion-in-action .event, .compassion-in-action .story, .compassion-in-action .pray {
+    	background-size: cover;
+    }
+}
+</style>
+
 	<section id="howitworks" class="how-to-act">
 		<h1 class="centered">Two ways to act</h1>
 		<p class="centered">What's our goal? To get more children sponsored everywhere.</p>
@@ -217,14 +253,14 @@
 			</div>
 			<div class="columns medium-4">
 				<div class="img-holder"><img src="/multimedia/act-for_howitworks-2-2.png"></div>
-				<h4>Create a fundraiser</h4>
-				<p>Use Compassion's digital resources to lay the groundwork and set your goals.</p>
+				<h4>Create your fundraiser</h4>
+				<p>Take your idea and fundraise with it! Use Compassion's digital resources to lay the groundwork and set your goals.</p>
 			</div>
 			<div class="columns medium-4">
 
 				<div class="img-holder"><img src="/multimedia/act-for_howitworks-3-2.png"></div>
 				<h4>Put your love into action</h4>
-				<p>Share with friends, engage your communities and reach your goal. Changing a life will uplift your own.</p>
+				<p>Share and promote your fundraiser with friends, engage your communities and reach your goal. Changing lives will uplift your own.</p>
 			</div>
 		</div>
 		<div class="sponsorship illustrations row">
@@ -235,80 +271,79 @@
 			</div>
 			<div class="columns medium-4">
 				<div class="img-holder"><img src="/multimedia/act-for_howitworks-2-3.png"></div>
-				<h4>Start a campaign</h4>
-				<p>Use Compassion's digital resources to lay the groundwork and offer the gift of sponsorship to your loved ones.</p>
+				<h4>Start your campaign</h4>
+				<p>Sharing sponsorship has never been easier! Use Compassion's digital resources to lay the groundwork and offer the gift of sponsorship to your community.</p>
 			</div>
 			<div class="columns medium-4">
 				<div class="img-holder"><img src="/multimedia/act-for_howitworks-3-2.png"></div>
 				<h4>Put your love into action</h4>
-				<p>Engage your communities and connect children with new sponsors. Changing lives will uplift your own.</p>
+				<p>Share what sponsorship means to you, engage your communities and connect children with new sponsors.</p>
 			</div>
 		</div>
 	</section>
 <!--end how to act-->
 <!--start mind-body-->
 <section class="mind-body">
-		<div class="row">
-				<div class="columns">
-						<h2><span>Compassion impacts 360° development:</span>
-								<span>Mind, body, heart, and soul</span>
-						</h2>
-						<p>The funds you raise will go to impact church-based child development centers in Brazil!</p>
-						<ul class="small-block-grid-4 mind-body-icons" style="background: url(/multimedia/act-for_circle.png) no-repeat center;">
-								<li class="mind"><img class="selected" src="/multimedia/act-for_mind.png"></li>
-								<li class="body"><img src="/multimedia/act-for_body.png"></li>
-								<li class="heart"><img src="/multimedia/act-for_heart.png"></li>
-								<li class="soul"><img src="/multimedia/act-for_soul.png"></li>
-						</ul>
-						<div class="mind-body-content">
-								<div class="mind selected">
-										<h1>mind</h1>
-										<ul>
-												<li>After-school tutoring</li>
-												<li>Assistance with school fees</li>
-												<li>Supplies and uniforms</li>
-												<li>Life-skills and vocational training</li>
-												<li>Literacy classes, craft and music workshops</li>
-												<li>Infrastructure like classrooms and materials to run jobs and skills training workshops</li>
-												<li>Computer labs</li>
-										</ul>
-								</div>
-								<div class="body">
-										<h1>body</h1>
-										<ul>
-												<li>Medical checkups, immunizations and care</li>
-												<li>Nutritional support</li>
-												<li>Education on health, sanitation and hygiene</li>
-												<li>Urgent medical care needs</li>
-												<li>Physical education spaces for motor skills development and safe places to play</li>
-												<li>Safe delivery and care for newborns and their moms</li>
-										</ul>
-								</div>
-								<div class="heart">
-										<h1>heart</h1>
-										<ul>
-												<li>Love and encouragement from personal sponsors</li>
-												<li>Loving attention from program staff</li>
-												<li>Development of respectful social skills</li>
-												<li>Christ-centered spiritual counseling</li>
-										</ul>
-								</div>
-								<div class="soul">
-										<h1>soul</h1>
-										<ul>
-												<li>Learning that God loves them</li>
-												<li>Singing and prayer</li>
-												<li>Age- and culture-appropriate Christian education</li>
-												<li>Service projects to help others</li>
-												<li>Spiritual development and socio-emotional support for children and their families</li>
-										</ul>
-								</div>
-						</div>
-				</div>
-		</div>
+    <div class="row">
+        <div class="columns">
+            <h2><span>Compassion impacts 360° development:</span>
+                <span>Mind, body, heart, and soul</span>
+            </h2>
+            <p>The funds you raise will go to impact church-based child development centers in Brazil!</p>
+            <ul class="small-block-grid-4 mind-body-icons" style="background: url(/multimedia/act-for_circle.png) no-repeat center;">
+                <li class="mind"><img class="selected" src="/multimedia/act-for_mind.png"></li>
+                <li class="body"><img src="/multimedia/act-for_body.png"></li>
+                <li class="heart"><img src="/multimedia/act-for_heart.png"></li>
+                <li class="soul"><img src="/multimedia/act-for_soul.png"></li>
+            </ul>
+            <div class="mind-body-content">
+                <div class="mind selected">
+                    <h1>mind</h1>
+                    <ul>
+                        <li>After-school tutoring</li>
+                        <li>Assistance with school fees</li>
+                        <li>Supplies and uniforms</li>
+                        <li>Life skills and vocational training</li>
+                        <li>Literacy classes, craft and music workshops</li>
+                        <li>Infrastructure like classrooms and materials to run jobs and skills training workshops</li>
+                        <li>Computer labs</li>
+                    </ul>
+                </div>
+                <div class="body">
+                    <h1>body</h1>
+                    <ul>
+                        <li>Medical checkups, immunizations and care</li>
+                        <li>Nutritional support</li>
+                        <li>Education on health, sanitation and hygiene</li>
+                        <li>Urgent medical care needs</li>
+                        <li>Physical education spaces for motor skills development and safe places to play</li>
+                        <li>Safe delivery and care for newborns and their moms</li>
+                    </ul>
+                </div>
+                <div class="heart">
+                    <h1>heart</h1>
+                    <ul>
+                        <li>Love and encouragement from personal sponsors</li>
+                        <li>Loving attention from program staff</li>
+                        <li>Development of respectful social skills</li>
+                        <li>Christ-centered spiritual counseling</li>
+                    </ul>
+                </div>
+                <div class="soul">
+                    <h1>soul</h1>
+                    <ul>
+                        <li>Learning that God loves them</li>
+                        <li>Singing and prayer</li>
+                        <li>Age- and culture-appropriate Christian education</li>
+                        <li>Service projects to help others</li>
+                        <li>Spiritual development and socio-emotional support for children and their families</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-<!--end mind-body-->
-<!--start gift of sponsorship-->
+
 	<section class="gift-of-sponsorship">
 			<h1>The gift of sponsorship</h1>
 			<div class="nav clearfix">
@@ -322,19 +357,22 @@
 					<p>- Gary, Greely CO</p>
 				</li>
 				<li data-orbit-slide="quote-2">
-					<p><span class="quote-mark">"</span>I began sponsoring through Compassion 21 years ago and have since sponsored 19 outstanding girls and boys in 8 different countries. I have seen four of them graduate and three went on to college!<span class="quote-mark">"</pan></p>
-					<p>- Gary, Greely CO</p>
+					<p><span class="quote-mark">"</span>My husband and I attended a concert when we saw a beautiful little face with hands on her hips. I started crying and I told my husband that this is the child that GOD wanted us to sponsor. Her name is Fernanda from Bolivia. She is my angel and I love her like she is my daughter.<span class="quote-mark">"</pan></p>
+					<p>- Hope, Buhl AL</p>
 				</li>
 				<li data-orbit-slide="quote-3">
-					<p><span class="quote-mark">"</span>I began sponsoring through Compassion 21 years ago and have since sponsored 19 outstanding girls and boys in 8 different countries. I have seen four of them graduate and three went on to college!<span class="quote-mark">"</pan></p>
-					<p>- Gary, Greely CO</p>
+					<p><span class="quote-mark">"</span>Our trip - intended to benefit our sponsored child, actually changed my life. Compassion does so much more than what I had realized. I was amazed by what I saw from every aspect. Compassion is the real deal!<span class="quote-mark">"</pan></p>
+					<p>- Michael, Buckely WA</p>
 				</li>
 			</ul>
 
 	</section>
 <!--end gift of sponsorship-->
 	<section class="evergreen-landing-end">
-		<img src="/multimedia/act-for_evergreen_landing-end.jpg">
+	    <img
+	    src="/multimedia/act-for_brazil-landing-end.jpg"
+	    srcset="/multimedia/act-for_brazil_landing-end@2x.jpg 1600w"
+	    >
 		<div class="layer"></div>
 	</section>
 </div>
@@ -363,21 +401,22 @@
 		return false;
 	})
 
+	//////// STICKY BUTTONS
+
+	var windowW = $(window).width();
+	var pageH = $('#evergreen-landing').height();
+
 	var lastScrollTop = 0, delta = 5;
 
     $(window).on('scroll', function() {
         var nowScrollTop = $(this).scrollTop();
-        var buttonPosition = $('.steps').offset().top;
 
         if(Math.abs(lastScrollTop - nowScrollTop) >= delta){ //scroll down
-        	if(nowScrollTop > lastScrollTop && buttonPosition < nowScrollTop) {
+        	if(nowScrollTop >= pageH /2 ) {
         		$('.fixed-buttons').addClass('appear');
-             }  else if (buttonPosition > nowScrollTop) {
+             }  else {
              	$('.fixed-buttons').removeClass('appear');
              }
-             //else { //scroll up
-            //  	$('.fixed-buttons').css('display','none');
-            // }
         	lastScrollTop = nowScrollTop;
         }
     });
@@ -522,6 +561,20 @@
 	if($('div .fixed-buttons').length) {
 		$('footer').css('padding-bottom', '5rem');
 	}
+    ///////// VIDEO HERO
+
+    $('.video .play').on('click', function(){
+        $('.video-pop-up').css('display','block');
+        $('.video-pop-up video').get(0).play();
+        $('.video video').get(0).pause();
+        $('body, html').css('overflow', 'hidden');
+    })
+    $('.video-pop-up img').on('click', function(){
+        $('.video-pop-up').css('display','none');
+        $('.video-pop-up video').get(0).pause();
+        $('.video video').get(0).play();
+        $('body, html').css('overflow', 'auto');
+    })
 })(jQuery);
 </script>
 

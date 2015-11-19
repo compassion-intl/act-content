@@ -61,7 +61,7 @@
 
 <!-- start Hero -->
 <section class="hero" >
-<video poster="poster" src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" autoplay="" muted="muted"  loop=""></video>
+    <video src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" autoplay="" muted="muted"  loop=""></video>
     <div class="mask"></div>
     <div class="row">
         <h1><span>It starts</span><span> with one</span><span> act</span></h1>
@@ -74,10 +74,16 @@
 <section class="intro">
     <div class="arrow"><img src="/multimedia/act-for_arrow_down_white.png"></div>
     <div class="row">
-        <div class="columns">
+        <div class="columns hide-for-small-only">
             <h2>There are 400 million children living in poverty.</br>
                 Put your love into action to impact real change.</h2>
-            <p>From now until Easter, March 27, the Compassion community is making a collective effort to raise money and help release millions of children in Brazil from poverty.</div>
+            <p>From now until Easter, March 27, the Compassion community is making a collective effort to raise money and help release millions of children in Brazil from poverty.
+        </div>
+        <div class="columns show-for-small-only">
+            <h2>There are 400 million children living in poverty.
+                Put your love into action to impact real change.</h2>
+            <p>From now until Easter, March 27, the Compassion community is making a collective effort to raise money and help release millions of children in Brazil from poverty.
+        </div>
     </div>
     <div class="row main-buttons">
         <div class="columns">
@@ -106,11 +112,11 @@
             </li>
         </ul>
     </div>
-    <div class="row">
+    <div class="row infographic">
         <div class="columns">
             <h2>Our journey starts with Brazil. Brazil is a country with a rich culture and strong faith, yet millions of Brazilian children live in extreme poverty and lack the resources to escape the cycle.</h2>
         </div>
-        <div class="columns infographic">
+        <div class="columns">
             <div class="hide-for-small">
                 <img src="/multimedia/act-for_brazil_infographic_main_placeholder.png">
                 <img class="cloud" src="/multimedia/act-for_brazil_infographic_cloud.svg">
@@ -122,7 +128,11 @@
                 <img class="background" src="/multimedia/act-for_brazil_infographic_main.png">
                 <img class="text" src="/multimedia/act-for_brazil_infographic_text.png">
             </div>
-            <img class="show-for-small" src="/multimedia/act-for_brazil-infographic_mobile.png">
+
+        </div>
+         <img class="show-for-small" src="/multimedia/act-for_brazil-infographic_mobile.png">
+         <div class="columns">
+            <p>sources: UNICEF, Haver, Timetric</p>
         </div>
     </div>
 </section>
@@ -189,7 +199,7 @@
                         <li>After-school tutoring</li>
                         <li>Assistance with school fees</li>
                         <li>Supplies and uniforms</li>
-                        <li>Life-skills and vocational training</li>
+                        <li>Life skills and vocational training</li>
                         <li>Literacy classes, craft and music workshops</li>
                         <li>Infrastructure like classrooms and materials to run jobs and skills training workshops</li>
                         <li>Computer labs</li>
@@ -394,34 +404,56 @@
 </section>
 <!-- end Fundraising in Action -->
 
-<!-- start How It Works -->
+<style scoped>
+@media
+(-webkit-min-device-pixel-ratio: 2) and
+(min-resolution: 192dpi) and
+(max-width:500px) {
+    .fundraising-in-action .jesus {
+        background: url(/multimedia/act-for_brazil-action-2_x2.jpg) no-repeat center;
+    }
+    .fundraising-in-action .bike {
+        background: url(/multimedia/act-for_brazil-action-3_x2.jpg) no-repeat center;
+    }
+    .fundraising-in-action .morgana {
+        background: url(/multimedia/act-for_brazil-action-4_x2.jpg) no-repeat center;
+    }
+    .fundraising-in-action .jesus, .fundraising-in-action .bike, .fundraising-in-action .morgana {
+        background-size: cover;
+    }
+}
+</style>
+
 <section id="howitworks" class="how-to-act">
     <div class="row">
         <h1>How it works</h1>
     </div>
     <div class="row">
-        <div class="columns medium-4">
-            <div class="img-holder"><img src="/multimedia/act-for_graphic-inspired.png"></div>
-            <h4>Get inspired</h4>
-            <p>Think of an idea. Be original. Plan a bake sale, host a movie in the park, organize a Fleetwood Mac dance party, arrange a talent show...</p>
-        </div>
-        <div class="columns medium-4">
-            <div class="img-holder"><img src="/multimedia/act-for_graphic-create.png"></div>
-            <h4>Create a fundraiser</h4>
-            <p>Use Compassion's digital resources to lay the groundwork and set your goals.</p>
-        </div>
-        <div class="columns medium-4">
-            <div class="img-holder"><img src="/multimedia/act-for_graphic-action.png"></div>
-            <h4>Put your love into action</h4>
-            <p>Share with friends, engage your communities and reach your goal. Changing a life will uplift your own.</p>
-        </div>
+            <div class="columns medium-4">
+                <div class="img-holder"><img src="/multimedia/act-for_graphic-inspired.png"></div>
+                <h4>Get inspired</h4>
+                <p>Think of an idea. Be original. Plan a bake sale, host a movie in the park, organize a Fleetwood Mac dance party, arrange a talent show...</p>
+            </div>
+            <div class="columns medium-4">
+                <div class="img-holder"><img src="/multimedia/act-for_howitworks-2-2.png"></div>
+                <h4>Create your fundraiser</h4>
+                <p>Take your idea and fundraise with it! Use Compassion's digital resources to lay the groundwork and set your goals.</p>
+            </div>
+            <div class="columns medium-4">
+                <div class="img-holder"><img src="/multimedia/act-for_howitworks-3.png"></div>
+                <h4>Put your love into action</h4>
+                <p>Share and promote your fundraiser with friends, engage your communities and reach your goal. Changing lives will uplift your own.</p>
+            </div>
     </div>
 </section>
 <!-- end How It Works -->
 
 <section class="ending">
     <!-- <img src="/multimedia/act-for_brazil_landing-end.jpg"> -->
-    <img src="/multimedia/act-for_brazil_landing-end.jpg" srcset="/multimedia/act-for_brazil_landing-end.jpg 1x, /multimedia/act-for_brazil_landing-end@2x.jpg 2x">
+    <img
+    src="/multimedia/act-for_brazil-landing-end.jpg"
+    srcset="/multimedia/act-for_brazil_landing-end@2x.jpg 1600w"
+    >
     <div class="layer"></div>
 </section>
 </div>
@@ -510,7 +542,7 @@
 
     $(window).on('scroll', function() {
         var nowScrollTop = $(this).scrollTop();
-        var buttonPosition = $('.intro .buttons-2').offset().top;
+        var buttonPosition = $('.mind-body').offset().top;
 
         if(Math.abs(lastScrollTop - nowScrollTop) >= delta){ //scroll down
             if(nowScrollTop > lastScrollTop && buttonPosition < nowScrollTop) {
@@ -549,14 +581,8 @@
 
         if($('.infographic .van, .infographic .kids').inView('both')) {
             $('.infographic .van, .infographic .kids').addClass('move');
-            if($('.infographic .van.move').length) {
-                setTimeout(function()
-                    {$('.infographic .van, .infographic .kids').addClass('disappear')},
-                    8000
-                )
-            }
+
         } else {
-            $('.infographic .van, .infographic .kids').removeClass('disappear');
             $('.infographic .van, .infographic .kids').removeClass('move');
         }
     });
