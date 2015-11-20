@@ -1,11 +1,11 @@
 /*------------------------------------*\
-	$MIXINS
+    $MIXINS
 \*------------------------------------*/
 /* CSS Transition
-	Usage: @include transition(width,0.3s,ease-out);
+    Usage: @include transition(width,0.3s,ease-out);
  */
-/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
-	Usage: @include font-size(1, large);
+/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback
+    Usage: @include font-size(1, large);
 */
 meta.foundation-version {
   font-family: "/{{VERSION}}/"; }
@@ -5749,7 +5749,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
       font-size: 1rem; } }
 .brazil-stories .table {
   display: table;
-  height: 100%; 
+  height: 100%;
   position: absolute;
   left:0;
   right: 0;
@@ -5924,7 +5924,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
 .brazil-stories .hero {
   height: 28rem;
   width: 100%;
-  overflow: hidden; 
+  overflow: hidden;
   background-color: #0055A6;}
   .brazil-stories .hero video {
     position: absolute;
@@ -6078,7 +6078,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
     .brazil-stories .other-stories .table-cell a {
       height: 2.5rem;
       padding-top: .5rem;
-      width: 10rem; 
+      width: 10rem;
       margin:auto;}
       @media only screen and (min-width:40.063em) {
         .brazil-stories .other-stories .table-cell a {
@@ -6914,8 +6914,6 @@ input[type="checkbox"] + label, input[type="radio"] + label {
 #brazil-landing, #post-actbr {
   text-align: center;
   overflow-x: hidden; }
-<<<<<<< HEAD
-=======
   #brazil-landing .video-pop-up, #post-actbr .video-pop-up {
     background: rgba(0, 0, 0, 0.7);
     display: none;
@@ -6938,7 +6936,6 @@ input[type="checkbox"] + label, input[type="radio"] + label {
       right: 30px;
       position: absolute;
       cursor: pointer; }
->>>>>>> #na-deliveries
   #brazil-landing h1, #brazil-landing h2, #brazil-landing h4, #brazil-landing p, #brazil-landing a, #post-actbr h1, #post-actbr h2, #post-actbr h4, #post-actbr p, #post-actbr a {
     color: white; }
   @media only screen and (max-width: 40em) {
@@ -6980,12 +6977,12 @@ input[type="checkbox"] + label, input[type="radio"] + label {
       transform: translateX(-50%) translateY(-50%);
       height: 100%;
       width: auto;
-      z-index: -1; 
-/*   background:transparent url('poster.jpg') no-repeat 0 0;*/ 
-   -webkit-background-size:cover; 
-   -moz-background-size:cover; 
-   -o-background-size:cover; 
-   background-size:cover; 
+      z-index: -1;
+/*   background:transparent url('poster.jpg') no-repeat 0 0;*/
+   -webkit-background-size:cover;
+   -moz-background-size:cover;
+   -o-background-size:cover;
+   background-size:cover;
     }
     @media only screen and (max-width:40.063em) {
        #brazil-landing .hero video::-webkit-media-controls-start-playback-button, #post-actbr .hero video::-webkit-media-controls-start-playback-button {
@@ -7013,7 +7010,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
       top: 0;
       left: 0;
       bottom: 0;
-      right: 0; 
+      right: 0;
       z-index:2;}
     #brazil-landing .hero h1, #post-actbr .hero h1 {
       position: absolute;
@@ -7321,7 +7318,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
     #brazil-landing .fundraising-in-action .row .columns, #post-actbr .fundraising-in-action .row .columns {
       padding: 0;
       overflow: hidden;
-      height: 15rem; 
+      height: 15rem;
       background-size:cover!important;}
       @media only screen and (min-width:40.063em) {
         #brazil-landing .fundraising-in-action .row .columns, #post-actbr .fundraising-in-action .row .columns {
