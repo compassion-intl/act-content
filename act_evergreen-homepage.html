@@ -46,6 +46,19 @@
         <img src="/multimedia/x.png">
         <video src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" controls></video>
     </div>
+	<div class="video-pop-up">
+	    <img src="multimedia/x.png">
+	    <video src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" controls></video>
+	</div>  
+
+	<div class="fixed-buttons">
+		<div class="columns">
+			<ul class="buttons-2">
+				<li><a href="" class="button-solid-yellow">Start a fundraiser</a></li>
+				<li><a href="" class="button-solid-sky-blue">find sponsors</a></li>
+			</ul>
+		</div>
+	</div>
 
     <div class="fixed-buttons">
         <div class="columns">
@@ -406,6 +419,38 @@
     })
 
     //////// STICKY BUTTONS
+	$("#how-does-it-work").click(function(){ 
+		var sectionTop = $("#howitworks").offset().top;
+		$('html, body').animate({scrollTop:sectionTop}, 500);
+		return false;
+	})
+///////// VIDEO 
+
+    $('body').css('height', 'auto');
+  
+    var windowH = $(window).height();
+    var windowTop = $(window).scrollTop();
+    var windowBottom = windowTop + windowH;
+    var videoH = $('.video-pop-up video').height();
+    var videoTop = (windowH - videoH) /2 ;
+
+    $('.video-pop-up').css('top', windowTop);
+    $('.video-pop-up').css('bottom', windowBottom);
+
+    $('.video-pop-up video').css('top', videoTop);
+
+    $('.video .play').on('click', function(){
+        $('.video-pop-up').css('display','block');
+        $('.video-pop-up video').get(0).play();
+        $('.video video').get(0).pause();
+        $('body, html').css('overflow', 'hidden');
+    })
+    $('.video-pop-up img').on('click', function(){
+        $('.video-pop-up').css('display','none');
+        $('.video-pop-up video').get(0).pause();
+        $('.video video').get(0).play();
+        $('body, html').css('overflow', 'auto');
+    })
 
     var windowW = $(window).width();
     var pageH = $('#evergreen-landing').height();
@@ -579,6 +624,9 @@
         $('.video video').get(0).play();
         $('body, html').css('overflow', 'auto');
     })
+	if($('div .fixed-buttons').length) {
+		$('footer').css('padding-bottom', '5rem');
+	} 
 })(jQuery);
 </script>
 
