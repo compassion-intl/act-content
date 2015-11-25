@@ -46,25 +46,12 @@
         <img src="/multimedia/x.png">
         <video src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" controls></video>
     </div>
-	<div class="video-pop-up">
-	    <img src="multimedia/x.png">
-	    <video src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" controls></video>
-	</div>  
-
-	<div class="fixed-buttons">
-		<div class="columns">
-			<ul class="buttons-2">
-				<li><a href="" class="button-solid-yellow">Start a fundraiser</a></li>
-				<li><a href="" class="button-solid-sky-blue">find sponsors</a></li>
-			</ul>
-		</div>
-	</div>
 
     <div class="fixed-buttons">
         <div class="columns">
             <ul class="buttons-2">
                 <li><a href="/act/build-your-evergreen-fundraiser.htm" class="button-solid-yellow">Start a fundraiser</a></li>
-                <li><a href="/act/build-your-sponsorship-campaign.htm" class="button-solid-blue">find sponsors</a></li>
+                <li><a href="/act/build-your-sponsorship-campaign.htm" class="button-solid-sky-blue">find sponsors</a></li>
             </ul>
         </div>
     </div>
@@ -419,15 +406,15 @@
     })
 
     //////// STICKY BUTTONS
-	$("#how-does-it-work").click(function(){ 
-		var sectionTop = $("#howitworks").offset().top;
-		$('html, body').animate({scrollTop:sectionTop}, 500);
-		return false;
-	})
-///////// VIDEO 
+    $("#how-does-it-work").click(function(){
+        var sectionTop = $("#howitworks").offset().top;
+        $('html, body').animate({scrollTop:sectionTop}, 500);
+        return false;
+    })
+    ///////// VIDEO
 
     $('body').css('height', 'auto');
-  
+
     var windowH = $(window).height();
     var windowTop = $(window).scrollTop();
     var windowBottom = windowTop + windowH;
@@ -624,9 +611,9 @@
         $('.video video').get(0).play();
         $('body, html').css('overflow', 'auto');
     })
-	if($('div .fixed-buttons').length) {
-		$('footer').css('padding-bottom', '5rem');
-	} 
+    if($('div .fixed-buttons').length) {
+        $('footer').css('padding-bottom', '5rem');
+    }
 })(jQuery);
 </script>
 
