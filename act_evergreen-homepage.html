@@ -598,24 +598,9 @@
     if($('div .fixed-buttons').length) {
         $('footer').css('padding-bottom', '5rem');
     }
-    ///////// VIDEO HERO
-
-    $('.video .play').on('click', function(){
-        $('.video-pop-up').css('display','block');
-        $('.video-pop-up video').get(0).play();
-        $('.video video').get(0).pause();
-        $('body, html').css('overflow', 'hidden');
-    })
-    $('.video-pop-up img').on('click', function(){
-        $('.video-pop-up').css('display','none');
-        $('.video-pop-up video').get(0).pause();
-        $('.video video').get(0).play();
-        $('body, html').css('overflow', 'auto');
-    })
-    if($('div .fixed-buttons').length) {
-        $('footer').css('padding-bottom', '5rem');
-    }
 })(jQuery);
 </script>
+
+</body>
 
 </body>
