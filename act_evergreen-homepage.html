@@ -414,15 +414,15 @@
 
     $(window).on('scroll', function() {
 
-        ///////// VIDEO
+		///////// VIDEO
 
-        $('body').css('height', 'auto');
+	    $('body').css('height', 'auto');
 
-        var windowH = $(window).height();
-        var windowTop = $(window).scrollTop();
-        var windowBottom = windowTop + windowH;
-        var videoH = $('.video-pop-up video').height();
-        var videoTop = (windowH - videoH) /2 ;
+	    var windowH = $(window).height();
+	    var windowTop = $(window).scrollTop();
+	    var windowBottom = windowTop + windowH;
+	    var videoH = $('.video-pop-up video').height();
+	    var videoTop = (windowH - videoH) /2 ;
 
         $('.video-pop-up').css('top', windowTop);
         $('.video-pop-up').css('bottom', windowBottom);
@@ -595,9 +595,9 @@
 
 <script>
 (function($){
-    if($('div .fixed-buttons').length) {
-        $('footer').css('padding-bottom', '5rem');
-    }
+	if($('div .fixed-buttons').length) {
+		$('footer').css('padding-bottom', '5rem');
+	}
 })(jQuery);
 </script>
 

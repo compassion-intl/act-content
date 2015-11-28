@@ -545,12 +545,10 @@
 (function($){
 	if($('div .fixed-buttons').length) {
 		$('footer').css('padding-bottom', '5rem');
-	}
-    ///////// VIDEO HERO
 	} 
 	$(window).scroll(function(){
 	    $('body').css('height', 'auto');
-	  
+
 	    var windowH = $(window).height();
 	    var windowTop = $(window).scrollTop();
 	    var windowBottom = windowTop + windowH;
@@ -573,7 +571,7 @@
 	        $('.video-pop-up video').get(0).pause();
 	        $('.video video').get(0).play();
 	        $('body, html').css('overflow', 'auto');
-	    })		
+	    })
 	})
 })(jQuery);
 </script>
