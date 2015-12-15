@@ -188,11 +188,11 @@
 
 <script>
 (function($) {
-    $('.other-stories .columns').each(function(){
-        $(this).hover(function(){
-            $(this).find('.mask').toggleClass('hover');
-        })
-    })
+	$('.other-stories .columns').each(function(){
+		$(this).hover(function(){
+			$(this).find('.mask').toggleClass('hover');
+		})
+	})
 })(jQuery);
 </script>
 
@@ -257,39 +257,28 @@
 
 <script>
 (function($){
-    if($('.fixed-buttons').length) {
-        $('footer').css('padding-bottom', '5rem');
-    }
+	if($('.fixed-buttons').length) {
+		$('footer').css('padding-bottom', '5rem');
+	} 
 
-    //////// STICKY BUTTONS
+	//////// STICKY BUTTONS
 
-    var windowW = $(window).width();
-    var bodyH = $('body').height();
+	var windowW = $(window).width();
+	var bodyH = $('body').height();
 
-    $(window).scroll(function(){
-        var currentPostion = $(window).scrollTop();
-        if(windowW > 641 && currentPostion >= bodyH ) {
-            $('.fixed-buttons').addClass('appear');
-        }
-        if(windowW > 641 && currentPostion <= bodyH ) {
-            $('.fixed-buttons').removeClass('appear');
-        }
-    });
+	$(window).scroll(function(){
+		var currentPostion = $(window).scrollTop();
+		if(windowW > 641 && currentPostion >= bodyH ) {
+			$('.fixed-buttons').addClass('appear');
+		}
+		if(windowW > 641 && currentPostion <= bodyH ) {
+			$('.fixed-buttons').removeClass('appear');
+		}
+	})
 
     ///////// VIDEO HERO
 
     $('.hero .play').on('click', function(){
-        $('.video-pop-up').css('display','block');
-        $('.video-pop-up video').get(0).play();
-        $('.hero video').get(0).pause();
-        $('body, html').css('overflow', 'hidden');
-    })
-    $('.video-pop-up img').on('click', function(){
-        $('.video-pop-up').css('display','none');
-        $('.video-pop-up video').get(0).pause();
-        $('.hero video').get(0).play();
-        $('body, html').css('overflow', 'auto');
-    })
         if ($.browser.mobile == false) {
             $('.video-pop-up').css('display','block');           
             $('body, html').css('overflow', 'hidden');  
