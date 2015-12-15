@@ -18,6 +18,25 @@
           <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.js"></script>
 
     </head>
+		<title>Act for Compassion - Act for Morgana</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/advocate-campaigns.css?1445006249" media="all">
+		<link rel="stylesheet" href="css/font-awesome.css?1445006249" media="all">
+		<link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900,100italic,300italic,400italic,500italic,900italic,700italic" rel="stylesheet" type="text/css">
+		<script src="js/modernizr.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="lib/fastclick.js"></script>
+		<script src="js/foundation.min.js"></script><meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large"><meta class="foundation-mq-medium"><meta class="foundation-mq-small"><style></style>
+		<script src="js/jquery-ui.min.js"></script>
+		<script>
+		  $('.interactive-reflow').foundation();
+		</script>
+		<script src="js/detectmobilebrowsers.js"></script>
+	 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.js"></script>
+	
+	</head>
 
 <body>
 <header class="header cf clearfix" role="banner"> <!-- there should be a control for this -->
@@ -46,6 +65,9 @@
 
 <!-- start Jesus Gabriel story -->
 <div class="brazil-stories">
+
+<div id="loading"><img src="multimedia/act-for_loading.gif"  alt="loading"></div> 
+
 <div class="video-pop-up">
     <img src="/multimedia/x.png">
     <video src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" controls>
@@ -71,6 +93,21 @@
         </div>
         <div class="centered play"><img src="/multimedia/act-for_play.png"></div>
     </div>
+    <video poster="multimedia/act-for_brazil-landing-hero.jpg" class="show-for-small-only"></video>  
+    <video src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="show-for-medium-up video js-video_source" autoplay="" muted="muted"  loop=""></video>  
+	<div class="mask"></div>
+	<div class="nav">
+		<div class="prev" style="background: url(multimedia/act-for_brazil-stories-prev.png) no-repeat;background-size:cover;"></div>
+		<div class="next" style="background: url(multimedia/act-for_brazil-stories-next.png) no-repeat;background-size:cover;"></div>
+	</div>
+	<div class="row table">
+		<div class="table-cell centered">
+			<h1>Jesus Gabriel</h1>
+			<p>9 years old</p>
+			<p>Casserengue, Pariba, Brazil</p>
+		</div>
+		<div class="centered play"><img src="multimedia/act-for_play.png"></div>
+	</div>
 </section>
 <!-- end Hero -->
 
@@ -108,6 +145,33 @@
             <p>A missionary in Casserengue, Rose and his family were sent to the city by the Assembly of God church four years ago, and as soon as they arrived, they got to work starting up a community center for children; one that would provide a safe, creative environment in which kids could thrive. Mission accomplished. The community center now provides education, healthcare and vital child development services, and it's precisely because of these services that the children's dreams are coming true with increasing regularity. Research has shown that Compassion's well-rounded approach to education and development dramatically increases the probability of continued education and future employment, and the kids who attend this center are living proof of that.</p>
         </div>
     </div>
+	<div class="row">
+		<div class="columns max-45">
+			<h2>Nine-year-old Jesus Gabriel lives with his single mother and seven siblings in a small brick house that has two bedrooms, one bathroom, and a living room. The walls are cracked, the floors are unfinished, and there's little ventilation.</h2>
+			<p>The house itself is located in Casserengue, one of the most impoverished cities in Northeast Brazil, where 45% of the population lives on less than $35 a month. There are no job opportunities to speak of, and food and water are scarce. In fact, the only thing the city seems to have in abundance are drugs and alcohol.</p>
+			<p>And finally there's Jesus' health: because of a congenital defect in both his legs, he walks with a limp.</p>
+		</div>    
+		<div class="map centered">
+			<img src="multimedia/act-for_brazil-graphic-vitorino-placeholder.png">
+			<img src="multimedia/act-for_brazil-jesus-map.png">
+		</div>
+	</div>
+	<div class="row max-51">    
+		<div class="columns">
+			<img src="multimedia/act-for_brazil-jesus-1.jpg">  
+		</div>
+	</div>
+	<div class="row max-51">
+		<div class="columns medium-7">
+			<img src="multimedia/act-for_brazil-jesus-2.jpg">
+			<img class="right" src="multimedia/act-for_brazil-jesus-3.jpg">
+		</div>
+		<div class="columns medium-5">
+			<p>All this would make even the most optimistic person doubt whether poverty can be overcome, but Jesus is a shining example of how it's possible to keep dreaming in the face of challenging circumstances.</p>
+			<p>And much of the credit for this goes to Pastor Dayrson Rose.</p>
+			<p>A missionary in Casserengue, Rose and his family were sent to the city by the Assembly of God church four years ago, and as soon as they arrived, they got to work starting up a community center for children; one that would provide a safe, creative environment in which kids could thrive. Mission accomplished. The community center now provides education, healthcare and vital child development services, and it's precisely because of these services that the children's dreams are coming true with increasing regularity. Research has shown that Compassion's well-rounded approach to education and development dramatically increases the probability of continued education and future employment, and the kids who attend this center are living proof of that.</p>
+		</div>
+	</div>
 </section>
 <!-- end Intro -->
 
@@ -285,6 +349,30 @@
         $('.video-pop-up video').get(0).pause();
         $('.hero video').get(0).play();
         $('body, html').css('overflow', 'auto');
+    $('.hero .play').on('click', function(){
+        if ($.browser.mobile == false) {
+            $('.video-pop-up').css('display','block');           
+            $('body, html').css('overflow', 'hidden');  
+        } else {
+            $('.video-pop-up video').on('play',function() {
+               $('#loading').css('display','block');
+            })
+        }
+        $('.video-pop-up video').get(0).play(); 
+        $('.hero video.show-for-medium-up').get(0).pause();  
+
+    })
+
+    $('.video-pop-up video').on('pause',function() {
+        $('#loading').css('display','none');
+    })
+    $('.video-pop-up img').on('click', function(){
+        if ($.browser.mobile == false) {
+           $('.video-pop-up').css('display','none'); 
+           $('body, html').css('overflow', 'auto');
+        } 
+        $('.video-pop-up video').get(0).pause();
+        $('.hero video.show-for-medium-up').get(0).play();     
     })
 
     $('.hero .play').on('click', function(){

@@ -18,6 +18,25 @@
           <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.js"></script>
 
     </head>
+		<title>Act for Compassion - It starts with one ACT</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/advocate-campaigns.css?1445006249" media="all">
+		<link rel="stylesheet" href="css/font-awesome.css?1445006249" media="all">
+		<link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900,100italic,300italic,400italic,500italic,900italic,700italic" rel="stylesheet" type="text/css">
+		<script src="js/modernizr.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="lib/fastclick.js"></script>
+		<script src="js/foundation.min.js"></script><meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large"><meta class="foundation-mq-medium"><meta class="foundation-mq-small"><style></style>
+		<script src="js/jquery-ui.min.js"></script>
+		<script>
+		  $('body').foundation();
+		</script>
+		<script src="js/detectmobilebrowsers.js"></script>
+	 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.js"></script>
+	
+	</head>
 
 <body>
 <header class="header cf clearfix" role="banner"> <!-- there should be a control for this -->
@@ -79,6 +98,43 @@
         <img src="multimedia/x.png">
         <video src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" controls></video>
     </div>
+	<div id="loading"><div class="table"><div class="table-cell"><img src="multimedia/act-for_loading.gif"  alt="loading"></div></div></div> 
+
+	<div class="video-pop-up">
+	    <img src="multimedia/x.png">
+	    <video src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" controls></video>
+	</div>  
+
+	<section class="hero" style="background: url(multimedia/act-for_evergreen-volunteer.jpg); background-size: cover;">
+		<div class="row">
+			<h1>Volunteers are vital to compassion</h1>
+	</section>
+	<section class="join">
+		<div class="arrow"><img src="multimedia/act-for_arrow_down_white.png"></div>
+		<div class="row">
+			<div class="columns">
+				<h3>Join the movement and support Compassion</h3>
+				<p>Use your technical, organizational, and creative experience to extend the impact of Compassion's resources to benefit more children. Help make a difference! Volunteer from afar at a festival Compassion is attending or at the Global Ministry Center in Colorado Springs."</p>
+				<a class="button-solid-dark-green">Volunteer at compassion</a>
+			</div>
+		</div>
+	</section>
+		<section class="compassion-in-action">
+		<h1>Compassion is love in action</h1>
+		<div class="actions clearfix">
+			<div class="small-12 medium-4 columns malaria " style="background: url(multimedia/act-for_evergreen_esther.jpg) no-repeat; background-size: cover;">
+				<div class="mask"></div>
+				<div class="middle">
+					<div class="text">
+						<h2>Bite back</h2>
+						<p>Join the effort to make sure that no Compassion child suffers from malaria!</p>
+					</div>
+					<a href="http://biteback.net/" target="_blank" class="button-trans-white">Read more</a>
+				</div>
+			</div>
+			<div class="small-12 medium-8 columns campaign " style="background: url(multimedia/act-for_evergreen_boys.jpg) no-repeat center;background-size: cover;">
+				<div class="mask"></div>
+				<div class="middle">
 
     <!--start Compassion is Love in Action-->
         <section class="compassion-in-action">
@@ -265,6 +321,21 @@
 
         $('.video-pop-up').css('top', windowTop);
         $('.video-pop-up').css('bottom', windowBottom);
+	$(window).scroll(function(){
+
+		///////// VIDEO 
+
+	    $('body').css('height', 'auto');
+	  
+	    var windowH = $(window).height();
+	    var windowTop = $(window).scrollTop();
+	    var windowBottom = windowTop + windowH;
+	    var videoH = $('.video-pop-up video').height();
+	    var videoTop = (windowH - videoH) /2 ;
+
+	    $('.video-pop-up, #loading').css('top', windowTop);
+	    $('#loading').css('bottom', '0');
+	    $('#loading img').css('top',windowH/2);
 
         $('.video-pop-up video').css('top', videoTop);
 
@@ -281,6 +352,32 @@
             $('body, html').css('overflow', 'auto');
         })
     })
+	    $('.video .play').on('click', function(){
+		    if ($.browser.mobile == false) {
+	       	 $('.video-pop-up').css('display','block');
+	      	  $('.video video').get(0).pause();
+	      	  $('body, html').css('overflow', 'hidden');
+		    }else {
+		    	$('.video-pop-up video').on('play',function() {
+			       $('#loading').css('display','block');
+			    })
+		    }
+	        $('.video-pop-up video').get(0).play();
+	        // $('#loading').css('display','block');
+	    })
+
+	    $('.video-pop-up video').on('pause',function() {
+	        $('#loading').css('display','none');
+	    })
+	    $('.video-pop-up img').on('click', function(){
+	 		if ($.browser.mobile == false) {
+		        $('.video-pop-up').css('display','none');
+		        $('.video-pop-up video').get(0).pause();
+		        $('.video video').get(0).play();
+		        $('body, html').css('overflow', 'auto');
+	 		}
+	    })	
+	})
 
 
 })(jQuery);
