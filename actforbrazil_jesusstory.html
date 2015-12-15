@@ -1,5 +1,6 @@
 <head> <!-- this probably should be changed to the head control that the rest of the project uses -->
-    <title>Act for Compassion - Act for Morgana</title>
+
+        <title>Act for Compassion - Act for Morgana</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="css/advocate-campaigns.css?1445006249" media="all">
@@ -14,29 +15,10 @@
         <script>
           $('.interactive-reflow').foundation();
         </script>
-
+		<script src="js/detectmobilebrowsers.js"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.js"></script>
 
     </head>
-		<title>Act for Compassion - Act for Morgana</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="css/advocate-campaigns.css?1445006249" media="all">
-		<link rel="stylesheet" href="css/font-awesome.css?1445006249" media="all">
-		<link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet" type="text/css">
-		<link href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900,100italic,300italic,400italic,500italic,900italic,700italic" rel="stylesheet" type="text/css">
-		<script src="js/modernizr.js"></script>
-		<script src="js/jquery.min.js"></script>
-		<script src="lib/fastclick.js"></script>
-		<script src="js/foundation.min.js"></script><meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large"><meta class="foundation-mq-medium"><meta class="foundation-mq-small"><style></style>
-		<script src="js/jquery-ui.min.js"></script>
-		<script>
-		  $('.interactive-reflow').foundation();
-		</script>
-		<script src="js/detectmobilebrowsers.js"></script>
-	 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.js"></script>
-	
-	</head>
 
 <body>
 <header class="header cf clearfix" role="banner"> <!-- there should be a control for this -->
@@ -61,12 +43,13 @@
             <li><a href="#">Login</a></li>
         </ul>
     </div>
-</header>
+
+    </header>
 
 <!-- start Jesus Gabriel story -->
 <div class="brazil-stories">
 
-<div id="loading"><img src="multimedia/act-for_loading.gif"  alt="loading"></div> 
+<div id="loading"><img src="/multimedia/act-for_loading.gif"  alt="loading"></div> 
 
 <div class="video-pop-up">
     <img src="/multimedia/x.png">
@@ -79,26 +62,12 @@
 
 <!-- start Hero -->
 <section class="hero" >
-    <video  src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" autoplay="" muted="muted"  loop=""></video>
-    <div class="mask"></div>
-    <div class="nav">
-        <a href="/act/brazil-morgana.htm"><div class="prev" style="background: url(/multimedia/act-for_brazil-stories-prev.png) no-repeat;background-size:cover;"></div></a>
-        <a href="/act/brazil-three-brothers.htm"><div class="next" style="background: url(/multimedia/act-for_brazil-stories-next.png) no-repeat;background-size:cover;"></div></a>
-    </div>
-    <div class="row table">
-        <div class="table-cell centered">
-            <h1>Jesus Gabriel</h1>
-            <p>9 years old</p>
-            <p>Casserengue, Pariba, Brazil</p>
-        </div>
-        <div class="centered play"><img src="/multimedia/act-for_play.png"></div>
-    </div>
-    <video poster="multimedia/act-for_brazil-landing-hero.jpg" class="show-for-small-only"></video>  
-    <video src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="show-for-medium-up video js-video_source" autoplay="" muted="muted"  loop=""></video>  
+    <video poster="/multimedia/act-for_brazil-landing-hero.jpg" class="show-for-small-only"></video>  
+    <video src="video/Compassion_Anthem_30s.mp4" class="show-for-medium-up video js-video_source" autoplay="" muted="muted"  loop=""></video>  
 	<div class="mask"></div>
 	<div class="nav">
-		<div class="prev" style="background: url(multimedia/act-for_brazil-stories-prev.png) no-repeat;background-size:cover;"></div>
-		<div class="next" style="background: url(multimedia/act-for_brazil-stories-next.png) no-repeat;background-size:cover;"></div>
+		<a href="/act/brazil-morgana.htm"><div class="prev" style="background: url(/multimedia/act-for_brazil-stories-prev.png) no-repeat;background-size:cover;"></div></a>
+		<a href="/act/brazil-three-brothers.htm"><div class="next" style="background: url(/multimedia/act-for_brazil-stories-next.png) no-repeat;background-size:cover;"></div></a>
 	</div>
 	<div class="row table">
 		<div class="table-cell centered">
@@ -106,14 +75,13 @@
 			<p>9 years old</p>
 			<p>Casserengue, Pariba, Brazil</p>
 		</div>
-		<div class="centered play"><img src="multimedia/act-for_play.png"></div>
+		<div class="centered play"><img src="/multimedia/act-for_play.png"></div>
 	</div>
 </section>
 <!-- end Hero -->
-
 <ul class="buttons-2 fixed-buttons">
-    <li><a href="/act/build-your-fundraiser.htm?theme=tcm:5-87481" class='button-solid-sky-blue'>Act for Jesus Gabriel</a></li>
-    <li><a href="" class="button-solid-yellow">Make a Donation</a></li>
+	<li><a href="/act/build-your-fundraiser.htm?theme=tcm:5-87481" class='button-solid-sky-blue'>Act for Jesus Gabriel</a></li>
+	<li><a href="/cart/AddFund.aspx?TCMID=tcm:5-87519-16&AMOUNT=50&frequency=OneTime" class="button-solid-yellow">Make a Donation</a></li>
 </ul>
 
 <!-- start Intro -->
@@ -152,19 +120,19 @@
 			<p>And finally there's Jesus' health: because of a congenital defect in both his legs, he walks with a limp.</p>
 		</div>    
 		<div class="map centered">
-			<img src="multimedia/act-for_brazil-graphic-vitorino-placeholder.png">
-			<img src="multimedia/act-for_brazil-jesus-map.png">
+			<img src="/multimedia/act-for_brazil-graphic-vitorino-placeholder.png">
+			<img src="/multimedia/act-for_brazil-jesus-map.png">
 		</div>
 	</div>
 	<div class="row max-51">    
 		<div class="columns">
-			<img src="multimedia/act-for_brazil-jesus-1.jpg">  
+			<img src="/multimedia/act-for_brazil-jesus-1.jpg">  
 		</div>
 	</div>
 	<div class="row max-51">
 		<div class="columns medium-7">
-			<img src="multimedia/act-for_brazil-jesus-2.jpg">
-			<img class="right" src="multimedia/act-for_brazil-jesus-3.jpg">
+			<img src="/multimedia/act-for_brazil-jesus-2.jpg">
+			<img class="right" src="/multimedia/act-for_brazil-jesus-3.jpg">
 		</div>
 		<div class="columns medium-5">
 			<p>All this would make even the most optimistic person doubt whether poverty can be overcome, but Jesus is a shining example of how it's possible to keep dreaming in the face of challenging circumstances.</p>
@@ -200,7 +168,7 @@
             <p>For a little boy who wants to travel and see the world one day, beyond is the perfect place to be.</p>
         <ul class="buttons-2 show-for-small">
             <li><a href="/act/build-your-fundraiser.htm?theme=tcm:5-87481" class='button-solid-sky-blue'>Act for Jesus Gabriel</a></li>
-            <li><a href="" class="button-solid-yellow">Make a donation</a></li>
+	<li><a href="/cart/AddFund.aspx?TCMID=tcm:5-87519-16&AMOUNT=50&frequency=OneTime" class="button-solid-yellow">Make a Donation</a></li>
         </ul>
         </div>
     </div>
@@ -252,11 +220,6 @@
     })
 })(jQuery);
 </script>
-
-
-
-
-
 
 <footer class="footer" role="contentinfo"> <!-- there should be a control for this too -->
     <div class="row">
